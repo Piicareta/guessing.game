@@ -1,0 +1,176 @@
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgba(40, 40, 40);
+}
+
+html {
+    background-color: #F8ECD1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    padding: 10px;
+}
+
+header {
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Unica One', cursive;
+}
+.container{
+    display: grid;
+    background-color: #DEB6AB;
+    box-shadow: 10px 10px 15px #2c260b7a;
+    border-radius: 30px;
+    height: 300px;
+    width: 650px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Rokkitt', serif;
+}
+
+input {
+    border: none;
+    margin: 20px;
+    font-size: 22px;
+}
+
+#restart {
+    display: grid;
+    visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: -60px;
+    background-color: #DEB6AB;
+    box-shadow: 10px 10px 15px #2c260b7a;
+}
+
+#restart:hover {
+    background-color: #85586F;
+    transition: 500ms; 
+    color: #F8ECD1;
+}
+
+button {
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 0px;
+    border-style: none;
+    background-color: #F8ECD1;
+    border-radius: 30px;
+    transition: 500ms;
+    font-family: 'Unica One', cursive;
+}
+
+button:hover {
+    background-color: #85586F;
+    transition: 500ms; 
+    color: #F8ECD1;
+}
+
+header{
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+label{
+    font-size: 32px;
+    font-weight: bold;
+    color: #312f23;
+    font-family: 'Unica One', cursive;
+}
+
+.animationLabel1 {
+    animation: animaLabel1 1s ease-in-out;
+}
+
+.animationLabel2 {
+    animation: animaLabel2 1s ease-in-out;
+}
+
+.animationRestart {
+    animation: animaRestart 1s ease-in-out;
+}
+
+@keyframes animaLabel2 {
+
+    0%{
+        position: relative;
+        bottom: -30px;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    } 
+}
+
+@keyframes animaRestart {
+
+    0%{
+        position: relative;
+        bottom: -20px;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        bottom: -60px;
+        opacity: 1;
+    } 
+}
+
+@keyframes animaLabel1 {
+    0% {
+        position: relative;
+        left: 0px;
+    }
+    10% {
+        position: relative;
+        left: 5px;
+    }
+    15% {
+        position: relative;
+        left: -5px;
+    }
+    20% {
+        position: relative;
+        left: 10px;
+    }
+    30% {
+        position: relative;
+        left: -10px;
+    }
+    40% {
+        position: relative;
+        left: 10px;
+    }
+    60% {
+        position: relative;
+        left: -10px;
+    }
+    80% {
+        position: relative;
+        left: 10px;
+    }
+    100% {
+        position: relative;
+        left: 0px;
+    }
+}
