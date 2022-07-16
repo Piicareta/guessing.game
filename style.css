@@ -47,7 +47,17 @@ p{
 input {
     border: none;
     margin: 20px;
+    width: 50px;
+    height: 45px;
     font-size: 22px;
+    border-radius: 30px;
+    padding: 5px 10px;
+    outline: none;
+    transition: 500ms;
+}
+
+input:focus {
+    width: 150px;
 }
 
 #restart {
@@ -70,8 +80,9 @@ input {
 button {
     font-size: 25px;
     padding: 10px 20px;
-    margin: 0px;
     border-style: none;
+    position: relative;
+    top: -8px;
     background-color: #F8ECD1;
     border-radius: 30px;
     transition: 500ms;

@@ -1,12 +1,13 @@
+
 const answer = Math.floor(Math.random()*10000 + 1);
 let guessn = 0;
+let guess = document.getElementById("myInput");
 
-document.getElementById("myBtn").onclick = function guessTry() {
+function guessTry() {
     
-    let guess = document.getElementById("myInput").value;
     guessn += 1;
 
-    if(guess == answer){
+    if(guess.value == answer){
         setTimeout(function() {
             document.getElementById("myAnswer").classList.remove("animationLabel2");
             document.getElementById("restart").classList.remove("animationRestart");
@@ -21,7 +22,7 @@ document.getElementById("myBtn").onclick = function guessTry() {
         `The aswer is ${answer}, it took you ${guessn} guesses.`;
 
     }
-    else if(guess < answer){
+    else if(guess.value < answer){
         setTimeout(function() {
             document.getElementById("myAnswer").classList.remove("animationLabel1");
         }, 1000)
@@ -38,3 +39,21 @@ document.getElementById("myBtn").onclick = function guessTry() {
 
     }
 }
+
+document.addEventListener('keypress', function (x) {
+
+        if (x.key === 'Enter') {
+
+            if (guess.value === '') {
+
+                alert('Preencha o campo.')
+            }
+
+            else {
+                
+                guessTry()
+                guess.value = ''
+            }
+        } 
+
+})
