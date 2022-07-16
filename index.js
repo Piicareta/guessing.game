@@ -60,7 +60,7 @@ document.addEventListener('keypress', function (x) {
 
             if (guess.value === '') {
 
-                alert('Preencha o campo.')
+                alert('Fill in the guess field.')
             }
 
             else {
