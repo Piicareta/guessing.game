@@ -40,6 +40,20 @@ function guessTry() {
     }
 }
 
+document.getElementById("myBtn").onclick = function () {
+
+    if (guess.value === '') {
+
+        alert('Preencha o campo.')
+    }
+
+    else {
+        
+        guessTry()
+        guess.value = ''
+    }
+} 
+
 document.addEventListener('keypress', function (x) {
 
         if (x.key === 'Enter') {
